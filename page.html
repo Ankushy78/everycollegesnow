@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+</head>
+<body>
+    <style>
+         body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: black;
+                       
+        }
+        .container {
+          width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: top;
+            position: relative;
+        }
+           
+        .welcome-text {
+            font-size: 40px;
+            font-weight: bolder;
+            color: whitesmoke;
+            opacity: 2;
+            transform: translateX(-100px);
+            transition: opacity 1s ease, transform 1s ease;
+            top: 20;
+        }
+        .show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .link {
+            position: absolute;
+            bottom: 200px;
+            text-align: center;
+            width: 100%;
+        }
+        #slide {
+    position: absolute;
+    right: -1200px;
+    width: 600px;
+    height: 600px;
+    background: black;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 0.5s;
+}
+
+@-webkit-keyframes slide {
+    100% { right: 0; }
+}
+
+@keyframes slide {
+    100% { right: 0; }
+}
+.slide-right {
+    font-size: bolder;
+    top: 100vh;
+  width: 100%;
+  color: antiquewhite;
+  overflow: hidden;
+  margin-left: 0;
+  max-width: 0;
+}
+
+.slide-right h2 {
+  animation: 2s slide-right;
+  animation-delay: 2s;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -100px;
+  }
+
+  to {
+    margin-left: 100px;
+  }
+}
+    </style>
+    <div class="container">
+        <div class="link"></div>
+        <div>
+            <img id="slide" src="ak1.jpeg">
+        </div>
+        <div class="welcome-text">About Us</div>
+        <script>
+            window.addEventListener('load', () => {
+                const welcomeText = document.querySelector('.welcome-text');
+                welcomeText.classList.add('show');
+            });
+        </script>
+</body>
+</html>
+<html>
+    <body>
+        
+    <style>
+        .slide-right {
+            font-size: 46px;
+            top: 20px;
+  width: 100%;
+  overflow: hidden;
+  margin-left: 50px;
+  max-width: 900px
+
+}
+
+
+
+@keyframes slide-right {
+  from {
+    margin-left: -400px;
+  }
+
+  to {
+    margin-left: 100vh;
+  }
+}
+    </style>
+     
+    </script>
+    <div class="slide-right">
+        <p>We study at a graduation college named Lokmanya Tilak college of Engineering containing multiple branches with various activities and other fun activities
+            We the team of this website development are from AIML department and made this website for our semester 3 project to display in our college<br>
+           <ul> <li>Ankush yadav<br></li>
+            <li>Amarnath singh<br></li>
+           <li> vivek singh<br></li>
+            <li>swastik ojha<br></li>
+            </ul><p></div>
+             <style> #slide {
+                position: absolute;
+                right: -1200px;
+                width: 400px;
+                height: 500px;
+                background: black;
+                -webkit-animation: slide 0.5s forwards;
+                -webkit-animation-delay: 2s;
+                animation: slide 0.5s forwards;
+                animation-delay: 0.5s;
+            }
+            
+            @-webkit-keyframes slide {
+                100% { right: 0; }
+            }
+            
+            @keyframes slide {
+                100% { right: 0; }
+            }
+                </style>
+               <div> <img id="slide" src="k.jpeg"></div>
+    </body>
+</html>
